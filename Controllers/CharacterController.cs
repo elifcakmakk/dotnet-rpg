@@ -40,7 +40,7 @@ namespace dotnet_rpg.Controllers
         {
             return Ok(characters.FirstOrDefault(c => c.Id == id));
         }
-
+        //post method
         [HttpPost]
         public IActionResult AddCharacter(Character newCharacter){
             characters.Add(newCharacter);
